@@ -1,0 +1,7 @@
+export default function handler(req, res) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="113" height="113">
+    <rect width="113" height="113" fill="#3a6ea5"/>
+  </svg>`;
+  res.setHeader("Content-Type", "image/svg+xml");
+  res.send(svg);
+}
